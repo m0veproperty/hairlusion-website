@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "before": "/assets/cases/1-before.webp",
+    "after": "/assets/cases/1-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0004_1b.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0005_1a.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "before": "/assets/cases/2-before.webp",
+    "after": "/assets/cases/2-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0017_4a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0016_4b.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "before": "/assets/cases/3-before.webp",
+    "after": "/assets/cases/3-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0011_7a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0010_7b.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "before": "/assets/cases/4-before.webp",
+    "after": "/assets/cases/4-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0005_10a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0004_10b.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "before": "/assets/cases/5-before.webp",
+    "after": "/assets/cases/5-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/14a.png",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/14b.png"
+    ]
+  },
+  {
+    "id": 6,
+    "before": "/assets/cases/6-before.webp",
+    "after": "/assets/cases/6-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0003_2a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0002_2b.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "before": "/assets/cases/7-before.webp",
+    "after": "/assets/cases/7-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0015_5a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0014_5b.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "before": "/assets/cases/8-before.webp",
+    "after": "/assets/cases/8-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0009_8a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0008_8b.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "before": "/assets/cases/9-before.webp",
+    "after": "/assets/cases/9-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0003_11a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0002_11b.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "before": "/assets/cases/10-before.webp",
+    "after": "/assets/cases/10-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/13a.png",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/13b.png"
+    ]
+  },
+  {
+    "id": 11,
+    "before": "/assets/cases/11-before.webp",
+    "after": "/assets/cases/11-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0001_3a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0000_3b.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "before": "/assets/cases/12-before.webp",
+    "after": "/assets/cases/12-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0013_6a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0012_6b.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "before": "/assets/cases/13-before.webp",
+    "after": "/assets/cases/13-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0007_9a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0006_9b.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "before": "/assets/cases/14-before.webp",
+    "after": "/assets/cases/14-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0001_12a.jpg",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/BeforeAfter_0000_12b.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "before": "/assets/cases/15-before.webp",
+    "after": "/assets/cases/15-after.webp",
+    "sources": [
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/15a.png",
+      "https://www.hairlusion.com/wp-content/uploads/2024/04/15b.webp"
+    ]
+  }
+]
