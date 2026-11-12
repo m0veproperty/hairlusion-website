@@ -1,0 +1,45 @@
+.heading-reveal{opacity:0;transform:translateY(18px);filter:blur(5px);transition:opacity .85s cubic-bezier(.2,.7,.3,1),transform .85s cubic-bezier(.2,.7,.3,1),filter .85s}.heading-reveal.heading-arrived{opacity:1;transform:none;filter:none}.heading-reveal.heading-arrived>span{animation:heading-soft .85s .1s both}@keyframes heading-soft{from{opacity:.25;filter:blur(3px)}to{opacity:1;filter:none}}
+.consultation-prep{border:1px solid #ee8e5040;border-radius:24px;background:#10120fdb;padding:30px;margin-top:35px}.inner-page .consultation-prep h2{font-size:32px;margin:15px 0 28px}.consultation-prep h2 span{color:var(--orange)}.consultation-prep article{margin-top:26px}.prep-icon{width:47px;height:47px;border:1px solid var(--orange);border-radius:50%;display:grid;place-items:center;margin-bottom:13px}.prep-icon svg{width:24px;height:24px;fill:none;stroke:var(--orange);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.inner-page .consultation-prep h3{font-size:17px;margin-bottom:10px}.consultation-prep ul{list-style:none;margin:0;padding:0}.inner-page .consultation-prep li{font-size:12px;line-height:1.7;position:relative;padding-left:21px;margin:9px 0}.consultation-prep li:before{content:'→';position:absolute;left:0;color:var(--orange)}.contact-page-grid{gap:5%;align-items:start}.inner-dark .refined-enquiry{padding:38px;background:linear-gradient(145deg,#ee8e5014,#11130ff5 40%);border:1px solid #ee8e5055;box-shadow:0 20px 70px #0003;border-radius:27px}.inner-page .refined-enquiry h3{font-size:34px;line-height:1.15;margin:16px 0 22px}.refined-enquiry h3 span{color:var(--orange)}.form-pair{display:grid;grid-template-columns:1fr 1fr;gap:17px}.refined-enquiry label{font-size:11px;font-weight:600}.refined-enquiry input,.refined-enquiry textarea,.refined-enquiry select{transition:border-color .2s,box-shadow .2s}.refined-enquiry select{width:100%;display:block;margin-top:8px;padding:14px 12px;border:1px solid #ffffff35;border-radius:10px;background:#0e100d;color:var(--paper);font:inherit;font-size:12px;min-width:0}.refined-enquiry select:focus{outline:2px solid var(--orange);outline-offset:2px}.refined-enquiry option{background:#10120f}.refined-enquiry input::placeholder,.refined-enquiry textarea::placeholder{color:#85887e;font-size:12px}.refined-enquiry .action{width:100%;justify-content:space-between}.refined-enquiry>small{display:block;text-align:center;margin-top:15px;font-size:9px;color:#aaa99f}.inner-page .refined-enquiry .fine-print{font-size:10px;margin-top:20px}.refined-enquiry a{text-decoration:underline;text-underline-offset:3px}
+.cookie-dialog{position:fixed;inset:0;margin:auto;width:min(540px,calc(100% - 36px));max-height:calc(100svh - 40px);padding:38px;border:1px solid #ee8e5060;border-radius:28px;background:radial-gradient(ellipse at 100% 0,#ee8e501c,transparent 60%),#11130f;color:var(--paper);box-shadow:0 25px 100px #0008;overflow:auto}.cookie-dialog::backdrop{background:#05070580;backdrop-filter:blur(7px)}.cookie-emblem{width:49px;height:49px;display:grid;place-items:center;border:1px solid #ee8e5080;border-radius:50%;color:var(--orange);font-size:29px;margin-bottom:25px}.cookie-dialog .eyebrow{font-size:8px;letter-spacing:.2em;color:var(--orange)}.cookie-dialog h2{font:700 38px/1.12 var(--body);letter-spacing:-.045em;margin:16px 0 20px}.cookie-dialog h2 span{color:var(--orange)}.cookie-dialog p{font-size:12px;line-height:1.8;color:#c2c2b8}.cookie-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0 18px}.cookie-actions button{border:1px solid #ee8e5080;border-radius:30px;padding:13px 16px;font-size:12px;background:transparent;color:var(--paper)}.cookie-actions button:first-child{background:var(--orange);color:#161813;font-weight:700}.cookie-actions button span{margin-left:15px}.cookie-dialog .cookie-note{font-size:10px;color:#a9ac9f}.cookie-links{display:flex;gap:20px;margin-top:18px;font-size:10px}.cookie-links a{text-decoration:underline;text-underline-offset:4px}.cookie-settings{position:fixed;bottom:14px;left:15px;z-index:40;padding:7px 12px;border:1px solid #ffffff25;background:#10120fe8;color:#babdb2;font-size:9px;border-radius:20px}.cookie-settings:hover{border-color:var(--orange);color:var(--orange)}
+@media(max-width:760px){.inner-dark .refined-enquiry{padding:26px;margin-top:28px}.form-pair{grid-template-columns:1fr;gap:0}.inner-page .refined-enquiry h3{font-size:30px}.consultation-prep{padding:24px}.inner-page .consultation-prep h2{font-size:28px}.cookie-dialog{padding:27px;border-radius:23px}.cookie-dialog h2{font-size:33px}.cookie-emblem{margin-bottom:20px}.cookie-actions{gap:9px}.cookie-actions button{font-size:11px;padding:13px 10px}}
+@media(prefers-reduced-motion:reduce){.heading-reveal{opacity:1;transform:none;filter:none;transition:none}.heading-reveal.heading-arrived>span{animation:none}}
+.custom-cursor-active:has(.cookie-dialog[open]),.custom-cursor-active .cookie-dialog[open]{cursor:auto!important}.custom-cursor-active .cookie-dialog[open] button,.custom-cursor-active .cookie-dialog[open] a{cursor:pointer!important}body:has(.cookie-dialog[open]) .precision-cursor{opacity:0!important}
+
+/* Gentle entrances; the continuous background stays in place. */
+@keyframes gentle-page-in{from{opacity:0}to{opacity:1}}
+@keyframes gentle-panel-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.cookie-dialog[open]{animation:gentle-panel-in .65s cubic-bezier(.2,.7,.3,1) both}
+.cookie-dialog[open]::backdrop{animation:gentle-page-in .65s ease both}
+main{animation:gentle-page-in .65s ease both}
+.results .compare-wrap{width:100%;max-width:min(450px,50svh);justify-self:center;align-self:start}
+.results .comparison{aspect-ratio:.88;animation:gentle-page-in .55s ease both}
+.results .case-description{animation:gentle-panel-in .45s ease both}
+@media(max-width:760px){.results .compare-wrap{max-width:min(100%,57svh);align-self:center}}
+@media(prefers-reduced-motion:reduce){main,.cookie-dialog[open],.cookie-dialog[open]::backdrop,.results .comparison,.results .case-description{animation:none}}
+/* One sentence-case heading family, with a quieter editorial scale. */
+main h1,main h2{font-family:var(--body);font-weight:700;text-transform:none;letter-spacing:-.05em}
+body:has(.reference-hero) main h2{font-size:clamp(30px,3.45vw,56px);font-weight:700;text-transform:none}
+.reference-hero{grid-template-columns:.94fr 1.06fr;gap:4%}
+.reference-hero .hero-intro h1{font-size:clamp(38px,4.05vw,68px);animation:none}
+.reference-hero .hero-intro h1 .accent{max-width:none;text-wrap:balance}
+.reference-hero .hero-intro p{font-size:clamp(13px,1.08vw,17px)}
+.heading-reveal,.heading-reveal.heading-arrived{opacity:1;transform:none;filter:none;transition:none}
+.heading-reveal.heading-arrived>span{animation:none}
+.motion-word{display:inline-block;white-space:nowrap}
+.motion-letter{display:inline-block}
+.heading-reveal .motion-letter{opacity:0;transform:translateY(.22em);filter:blur(5px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.3,1),filter 1s ease;transition-delay:var(--letter-delay)}
+.heading-arrived .motion-letter{opacity:1;transform:none;filter:none}
+@media(max-width:1100px) and (min-width:761px){.reference-hero .hero-intro h1{font-size:38px}}
+@media(max-width:760px){.reference-hero .hero-intro h1{font-size:40px}.reference-hero .hero-intro p{font-size:13px}body:has(.reference-hero) main h2{font-size:32px!important}}
+@media(prefers-reduced-motion:reduce){.heading-reveal .motion-letter{opacity:1;transform:none;filter:none;transition:none}}
+.hero-intro h1 .motion-text,.hero-intro h1 .motion-word,.hero-intro h1 .motion-letter{color:inherit}
+.hero-intro h1 .headline-line>.motion-text{display:inline;animation:none}
+
+/* Consultation titles sit beside their icons, with the guidance below. */
+.consultation-prep article{display:grid;grid-template-columns:47px minmax(0,1fr);column-gap:16px;row-gap:12px;align-items:center}
+.consultation-prep article .prep-icon{margin:0}
+.inner-page .consultation-prep article h3{margin:0;line-height:1.35}
+.consultation-prep article ul{grid-column:1/-1}
+.inner-page .page-content:has(.consultant-copy){max-width:none}
+.consultant-copy .article-copy{margin:0;max-width:800px}
+.consultant-copy .article-copy>h2:first-child{margin-top:0}

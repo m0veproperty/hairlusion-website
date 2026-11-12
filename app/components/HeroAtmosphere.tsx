@@ -22,24 +22,20 @@ export default function HeroAtmosphere(){
     uniform float aspect;
     uniform float scroll;
     void main(){
-     vec2 p=(uvCoord-.5)*vec2(aspect,1.);float t=time*.07;
-     vec3 base=vec3(.043,.047,.043);vec3 orange=vec3(.933,.557,.314);
-     float light=0.;
-     for(int i=0;i<3;i++){
-      float k=float(i);
-      vec2 center=vec2(sin(t*.63+k*2.3)*.65,cos(t*.48+k*2.1+scroll*.13)*.62);
-      vec2 q=p-center;
-      float angle=t*.15+k;
-      q=mat2(cos(angle),-sin(angle),sin(angle),cos(angle))*q;
-      float radius=.65+k*.13;
-      float d=length(q*vec2(.72,1.18))-radius;
-      float rim=exp(-abs(d)*200.)*.53;
-      float glow=exp(-abs(d)*18.)*.11;
-      float inner=exp(-abs(d)*6.)*.12*step(d,0.);
-      float shade=.35+.65*smoothstep(-.8,.7,q.x+q.y);
-      light+=(rim+glow+inner)*shade;
+     vec2 p=uvCoord;float t=time*.085;
+     vec3 base=vec3(.043,.047,.043);vec3 orange=vec3(.933,.557,.314);float light=0.;
+     for(int band=0;band<3;band++){
+      float b=float(band);
+      for(int i=0;i<7;i++){
+       float k=float(i);
+       float y=.18+b*.29+k*(.012+.003*sin(t+b))+.16*sin(p.x*3.7+t+b*1.8)+.07*sin(p.x*6.-t*.6+b+k*.05);
+       float d=abs(p.y-y);
+       float shimmer=.86+.14*sin(p.x*4.-t*1.2+b);
+       light+=(exp(-d*650.)*.085+exp(-d*85.)*.012)*shimmer;
+      }
      }
-     vec3 color=base+orange*light*.32;
+     float mask=.50+.50*smoothstep(.2,.9,p.x);
+     vec3 color=base+orange*light*mask;
      gl_FragColor=vec4(color,1.);
     }`});
    const geometry=new THREE.PlaneGeometry(2,2);scene.add(new THREE.Mesh(geometry,material));

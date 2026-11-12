@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/pricing-2",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/pricing-2/",
+      "destination": "/pricing/",
+      "permanent": true
+    }
+  ]
+}
